@@ -1,0 +1,237 @@
+<div fxLayout="row wrap">
+    <div class="body" fxFlex="100" fxLayoutAlign="center center">
+        <div fxFlex="70" fxFlex.xs="90" fxFlex.sm="90" fxLayout.xs="column" fxLayout.sm="column" class="body-1" fxLayout.md="row">
+            <div fxLayout="column" fxFlex="50" class="lorem" fxLayoutAlign="center start" fxLayoutGap="20px" fxFlex.xs="100" fxFlex.sm="100" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center" >
+                <div class="lorem-heading">Lorem ipsum dolor sit amet consectetur</div>
+                <div class="button" fxLayoutAlign="center center" (click)="onBtnChange()" [ngStyle]="{'background-color': btn[i].color}" >{{btn[i].text}}</div>
+                <!-- <div class="button" fxLayoutAlign="center center" *ngIf="btn[1]">Lorem ipsum</div>
+                <div class="button" fxLayoutAlign="center center" *ngIf="btn[2]">Lorem ipsum</div> -->
+                <div class="lorem-para">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do.</div>
+                <button class="franchise-btn" fxLayoutAlign="center center">See the best franchises<img src="/assets/Polygon 6.svg" class="image"></button>
+            </div>
+            <div fxFlex="50" fxHide.xs fxHide.sm>
+                <img src="/assets/bg-remove.png" height="450px" width="630px" style="margin-top: 32px;">
+            </div>
+            <div fxHide.md fxHide.lg fxHide.xl fxLayoutAlign="center center" class="img2">
+                <img src="/assets/Group 1324.png"class="image-mb">
+            </div>
+        </div>
+    </div>
+
+    <div fxLayout="row wrap" fxFlex="100" class="dolor" fxLayoutAlign="center center">
+        <div fxFlex="100" fxLayoutAlign="center center" class="dolor-heading" fxFlex.xs="90" fxFlex.sm="90">
+            <b>LOREM IPSUM DOLOR</b>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px" fxFlex.xs="90" fxFlex.sm="90">
+            <div fxLayout="row" fxLayoutGap="40px"
+            *ngFor="let item of arr">
+                <div>
+                    <img src="{{item.url}}" class="check">
+                </div>
+                <div><b>{{item.text}}</b></div>
+            </div>
+        </div>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px" class="malls">
+        <div fxLayout="column" fxLayoutAlign="center center" class="malls-heading">
+            <div>Lorem ipsum dolor sit amet</div>
+            <div>adipiscing elit. Donec odio. Quisque volutpat mattis</div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center center" class="malls-para">
+            <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut.</div>
+            <div>Suspendisse urna nibh, viverra non, semper suscipit</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" fxHide.xs fxHide.sm>
+
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+                <img src="/assets/Group 380.png" width="308px" height="308px">
+                <div style="font-size: 24px;">Amazon Mall</div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+                <img src="/assets/Group 741.png" width="398px" height="398px">
+                <div style="font-size: 24px;">Centaurus Mall</div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+                <img src="/assets/Group 379.png" width="308px" height="308px">
+                <div style="font-size: 24px;">Giga Mall</div>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6px"  fxHide.md fxHide.lg fxHide.xl>
+            <button (click)="onPrevious()" mat-mini-fab class="prev-btn">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </button>
+
+            <div fxLayout="column"  fxLayoutAlign="center center" fxLayoutGap="20px">
+                <img src="{{arr5[i].url}}" width="210px" height="210px">
+                <div style="font-size: 24px;">{{arr5[i].text}}</div>
+            </div>
+
+            <button mat-mini-fab (click)="onNext()" class="next-btn">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="seo" fxLayoutAlign="end center" fxLayoutGap="20px" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+        <div fxFlex="85" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="40px" fxLayoutAlign.xs="center" fxLayoutAlign.sm="center" fxFlex.xs="90" fxFlex.sm="90">
+            <div fxFlex="40" fxLayout="column" class="seo-right" fxLayoutGap="20px" fxFlex.xs="100" fxFlex.sm="100">
+                <div class="lorem-word"><b>Lorem</b></div>
+                <div class="seo-head"><b>Ipsum dolor</b></div>
+                <div class="seo-para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Integer enim neque 
+                    volutpat ac tincidunt vitae semper. Ullamcorper eget nulla facilisi etiam
+                    dignissim diam quis enim. Enim eu turpis egestas pretium aenean pharetra
+                    magna ac. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Sapien eget mi proin 
+                    sed libero enim. Etiam sit amet nisl purus in mollis nunc sed id.
+                </div>
+            </div>
+            <div fxFlex="60" style="position: relative;" fxLayoutAlign="start center" fxHide.xs fxHide.sm>
+                <img src="/assets/Group 2116.png" width="500px" height="500px">
+                <img src="/assets/Group 2394.png" width="460px" height="600px" style="position: absolute; top: 0; left: 40%;">
+            </div>
+        </div>
+    </div>
+
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center center" style="padding: 40px;">
+        <div fxFlex="100" fxLayoutAlign="center center" class="item-heading">
+            Lorem Ipsum Dolor Set
+        </div>
+
+        <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center" fxLayout.xs="column" fxLayout.sm="column">
+            <div fxLayout="row wrap" fxFlex="30" *ngFor="let item of arr2" style="padding: 40px;" fxLayoutAlign="center center" fxLayout.xs="column" fxLayout.sm="column">
+                <div><img src="{{item.url}}" width="220px" height="220px"></div>
+                <div class="para-heading"><b>{{item.heading}}</b></div>
+                <div style="font-size: 16px; text-align: center;">{{item.text}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div fxFlex="100" fxLayout="row wrap" class="steps" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+        <div fxFlex="100" fxLayoutAlign="center center" class="step-heading" fxFlex.xs="90" fxFlex.sm="90">Lorem Ipsum Dolor Set</div>
+        <div fxFlex="100" fxLayoutAlign="center center" style="padding-top: 40px;" *ngFor="let item of arr3" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxFlex.xs="90" fxFlex.sm="90">
+            <div fxLayout="row wrap" fxFlex="50" fxFlex.xs="80" fxFlex.sm="80" >
+                <div class="step" fxFlex="100">
+                    {{item.step}}
+                </div>
+                <div fxFlex="100" class="step-para-head">
+                    Lorem Ipsum
+                </div>
+                <div class="step-para" fxFlex="100">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                </div>
+                <div fxFlex="100" style="padding: 20px 0px 20px 0px" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+                    <img src="/assets/next.svg" class="next-img">
+                </div>
+            </div>
+            <div class="radiant-bg" fxLayoutAlign="center center">
+                <img src="{{item.url}}" class="share-img">
+            </div>
+        </div>
+
+        <div fxflex="100" fxLayoutAlign="center center">
+            <div fxLayout="row wrap" class="card" fxLayoutAlign="center center" fxFlex="45" fxFlex.xs="90" fxFlex.sm="90">
+                <div class="box-heading">
+                    Lorem Ipsum Dolor Set...
+                </div>
+                <div style="font-size: 21px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo quam corrupti sequi molestiae maxime quod, repudiandae
+                    quis voluptas nostrum corporis.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-img">
+        <div fxLayout="row wrap" fxFlex="50" style="padding-left: 10%;" fxFlex.xs="90" fxFlex.sm="90" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+            <div class="head" fxFlex="100">Lorem Ipsem Dolor Set</div>
+            <div class="head-gr" fxFlex="100">LOREM IPSUM</div>
+            <div class="head-para" fxFlex="100">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Cupiditate sint ex quo doloremque, necessitatibus labore 
+                consequatur, voluptates veniam porro itaque iusto tenetur
+                perferendis placeat aliquam magnam laudantium consequuntur
+                officia recusandae.
+            </div>
+            
+            <div class="head-para" fxFlex="100">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Cupiditate sint ex quo doloremque, necessitatibus labore 
+                consequatur, voluptates veniam porro itaque iusto tenetur
+                perferendis placeat aliquam magnam laudantium consequuntur
+                officia recusandae.
+            </div>
+            <div fxLayoutAlign="start start" style="padding-top: 20px;">
+                <button class="franchise-btn" mat-flat-button fxLayoutAlign="center center">
+                    Scheduale a call today!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row wrap" fxFlex="100">
+        <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center" class="stories">
+            <div class="success">SUCCESS STORIES</div>
+            <div class="client">Ez-Franchise Client Testimonials</div>
+        </div>
+        <div fxFlex="100" fxLayoutAlign="center center"  fxLayout.xs="column" fxLayout.sm="column">
+            <div fxFlex="20" fxLayout="row wrap" fxLayoutAlign="center center" class="cards-2" *ngFor="let item of arr4" [ngStyle]="{'background-color': item.color}">
+                <div fxFlex="100" fxLayoutAlign="center center">
+                    <img src="/assets/quote.svg" height="56px" width="28px">
+                </div>
+
+                <div fxFlex="100" fxLayoutAlign="center center" style="font-size: 16px; padding: 20px 0px 20px 0px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua Integer enim.
+                </div>
+
+                <div fxFlex="100" fxLayoutAlign="center center">
+                    <img src="{{item.url}}" height="175px" width="175px">
+                </div>
+
+                <div fxFlex="100"fxLayoutAlign="center center" style="font-size: 27px; padding: 20px 0px 20px 0px;">Lorem Ipsum</div>
+                <div fxFlex="100" fxLayoutAlign="center center" style="font-size: 21px">Lorem ipsum dolor set</div>
+            </div>
+        </div>
+    </div>
+
+    <div fxLayoutAlign="center center" style="width: 100%;" class="gaurantee">
+        <div fxLayout="column" fxLayoutGap="20px" fxFlex="60" fxFlex.xs="80" fxFlex.sm="80">
+            <div  fxLayoutAlign="center center" class="logo-head">
+                Lorem Ipsum Dolor Sit Amet
+            </div>
+            <div fxLayoutAlign="center center">
+                <img src="/assets/OBJECTS.svg" class="logo-image">
+            </div>
+            <div fxLayoutAlign="center center" class="logo-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                Quisque volutpat mattis eros. Nullam malesuada erat ut turpis
+                Aenean dignissim pellentesque felis.
+            </div>
+            <div fxLayoutAlign="center center" class="logo-body"> Suspendisse urna nibh. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</div>
+            <div fxLayoutAlign="center center" class="logo-body"><b>Morbi in sem quis dui placerat ornare pellentesque</b></div>
+            <div fxLayoutAlign="center center">
+                <button class="franchise-btn" fxLayoutAlign="center center" mat-flat-button>Scheduale a call today!</button>
+            </div>
+        </div>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" style="padding: 60px 0px 40px 0px;">
+        <div fxFlex="50" fxLayoutAlign="end center" fxHide.xs fxHide.sm>
+            <img src="/assets/Mask Group 874.png" height="394px" width="572px">
+        </div>
+        <div fxLayout="column" fxFlex="50" fxLayoutGap="20px" fxLayoutAlign="center start" fxFlex.xs="100" fxFlex.sm="100" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+            <div class="man"><b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</b></div>
+            <div class="man-heading" ><b>Lorem Ipsum<br> Dolor Sit Amet Consectetuer!</b></div>
+            <div>
+                <button class="franchise-btn" fxLayoutAlign="center center" mat-flat-button>Scheduale a call today!</button>
+            </div>
+        </div>
+    </div>
+</div>

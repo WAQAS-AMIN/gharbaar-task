@@ -1,0 +1,42 @@
+.nav
+{
+    height: 100px;
+}
+.nav-bar
+{
+    background-color: #08083D;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.nav-elements
+{
+    font-weight:  300;
+    letter-spacing: 0px;
+}
+.button
+{
+    background-color: #23CE6B;
+    color: white;
+    width: 138px;
+}
+.logo
+{
+    font-size: 31px;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 360px) and (max-width: 900px) 
+{
+    .logo
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) 
+{
+    .logo
+    {
+        font-size: 16px;
+    }
+}
