@@ -4,7 +4,7 @@
 ## Languages:
   Html CSS JS TS 
 
-                                                                Web-Application
+                                                        Web-Application
 ## Requirements
 
 - Angular 10.0+
