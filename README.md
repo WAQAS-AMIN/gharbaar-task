@@ -5,11 +5,6 @@
   Html CSS JS TS 
 
                                                                 Web-Application
-                                                                
-
-## Demo
-<!-- <img src="https://media.giphy.com/media/OjYQvoOicZS3StriCK/giphy.gif" width="250" height="500" /> -->
-
 ## Requirements
 
 - Angular 10.0+
